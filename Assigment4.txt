@@ -1,0 +1,188 @@
+void main() {
+  print("QUESTION:1");
+  List nameList = ["Bilal","Bilal","Bilal","Owais","Owais","Owais"];
+  var nameList2 = nameList.toSet().toList();
+  print(nameList2);
+
+  print("QUESTION:2");
+  var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+  for (var i = 0; i < a.length; i++) {
+    if (a[i] % 2 == 0) {
+      print(a[i]);
+    }
+  }
+
+  print("QUESTION:3");
+  for (var a = 1; a <= 15; a++) {
+    print("7x${a}=${a * 7}");
+  }
+
+  print("Question:4");
+  List fruits = ["apple", "banana", "mango", "orange", "stawberry"];
+  for (var b = 0; b < fruits.length; b++) {
+    print(fruits[b]);
+  }
+
+  print("Question:5");
+  for (var c = 1; c <= 20; c++) {
+    print(c * 5);
+  }
+
+  print("Question:8");
+  var firstNumber = 10;
+  var secondNumber = 20;
+  var operater = ['+', '-', '*', '/', '%'];
+  if (operater[0] == '+') {
+    var total = firstNumber + secondNumber;
+    print(total);
+  }
+  if (operater[1] == '-') {
+    var total = firstNumber - secondNumber;
+    print(total);
+  }
+  if (operater[2] == '*') {
+    var total = firstNumber * secondNumber;
+    print(total);
+  }
+  if (operater[3] == '/') {
+    var total = firstNumber / secondNumber;
+    print(total);
+  }
+  if (operater[4] == '%') {
+    var total = firstNumber % secondNumber;
+    print(total);
+  }
+  print("Question:9");
+  var string = "B";
+  if (string == 'a' ||
+      string == 'A' ||
+      string == 'i' ||
+      string == 'I' ||
+      string == 'e' ||
+      string == 'E' ||
+      string == 'o' ||
+      string == 'O' ||
+      string == 'u' ||
+      string == 'U') {
+    print("true");
+  } else {
+    print("false");
+  }
+
+  print("Question:10");
+  var b = "hello world";
+  List c = b.split('');
+  var d = List.of(c.reversed);
+  var e = d.join();
+  print(e);
+
+  print("Question:12");
+  Iterable<int> findMissingInts(List<int> ints) sync* {
+    for (var i = 0; i < ints.length - 1; i++) {
+      for (var j = ints[i] + 1; j < ints[i + 1]; j++) {
+        yield j;
+      }
+    }
+  }
+  print(findMissingInts([
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    45,
+    46,
+    48,
+    49,
+    50,
+    51,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    66,
+    67,
+    68,
+    69,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+
+
+
+
+  ]));
+
+  print("Question:13");
+  var list = [65, 34, 43, 44, 28, 70, 47, 52, 8, 11];
+  var largestvalue = list[0];
+  var smallestvalue = list[0];
+
+  for (var i = 0; i < list.length; i++) {
+    if (list[i] > largestvalue) {
+      largestvalue = list[i];
+    }
+    if (list[i] < smallestvalue) {
+      smallestvalue = list[i];
+    }
+  }
+  print("Smallest value in the list : ${smallestvalue}");
+  print("Largest value in the list : ${largestvalue}");
+}
